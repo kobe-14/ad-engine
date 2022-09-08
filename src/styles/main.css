@@ -19,7 +19,22 @@ body {
     height: 100%;
     width: 720px;
     background: #264653;
-    animation: animateBackground 30s infinite;
+    animation: animateBackground 30s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@media (max-width: 480px) {
+    .outer-container {
+        height: 50px;
+    }
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+    .inner-container {
+        width: 100%;
+    }
 }
 
 @keyframes animateBackground {
