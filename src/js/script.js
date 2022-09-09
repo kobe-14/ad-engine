@@ -11,19 +11,11 @@ import "../styles/main.css";
 
   document.body.appendChild(outerContainer);
 
-  function toggleAnimation({ animate }) {
-    if (animate) {
-      innerContainer.classList.add("inner-container");
-    } else {
-      innerContainer.classList.remove("inner-container");
-    }
-  }
-
   function handleVisibilityChange() {
     if (document.visibilityState === "hidden") {
-      toggleAnimation({ animate: false });
+      innerContainer.classList.remove("inner-container");
     } else {
-      toggleAnimation({ animate: true });
+      innerContainer.classList.add("inner-container");
     }
   }
 
