@@ -19,6 +19,7 @@ body {
     height: 100%;
     width: 720px;
     background: #264653;
+    -webkit-animation: animateBackground 5s cubic-bezier(1, 0, 0, 1) infinite;
     animation: animateBackground 30s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
@@ -34,6 +35,28 @@ body {
 @media (min-width: 481px) and (max-width: 720px) {
     .inner-container {
         width: 100%;
+    }
+}
+
+@-webkit-keyframes animateBackground {
+    0% {
+        background: #264653;
+    }
+
+    25% {
+        background: #2a9d8f;
+    }
+
+    50% {
+        background: #e9c46a;
+    }
+
+    75% {
+        background: #e76f51;
+    }
+
+    100% {
+        background: #264653;
     }
 }
 
