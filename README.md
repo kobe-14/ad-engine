@@ -12,7 +12,6 @@ Please follow these steps to run the engine locally:
 
 - Install dependencies <br>
   `npm i`<br>
-- Change `position: sticky -> fixed` in `outer-container` class in css file when running in local to make the wrapper stick to bottom
 - Run locally <br>
   `npm run dev`
 - Generate build <br>
