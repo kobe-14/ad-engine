@@ -30,7 +30,7 @@ import "../styles/main.css";
     if (document.visibilityState === "hidden") {
       clearInterval(interval);
     } else {
-      interval = setInterval(changeBackgroundColor, 5000);
+      interval = setInterval(changeBackgroundColor, 30000);
     }
   }
 
